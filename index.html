@@ -3,104 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallet SICAI</title>
+    <title>Wallet SICAI | Gestión Académica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="hero">
-        <div class="header-content">
-        <img src="img/logo-wallet-sicai.png" alt="Logo Wallet SICAI" class="logo">
-        <h1>Wallet SICAI</h1>
+        <div class="container" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="header-content">
+                <img src="img/logo-wallet-sicai.png" alt="Logo" class="logo">
+                <h1>Wallet SICAI</h1>
+            </div>
+            <p>Plataforma avanzada para la gestión de fondos escolares.</p>
         </div>
-        <p>Plataforma para centros educativos y gestión académica</p>
     </header>
-    <section class="descripcion">
-        <h2>¿Qué es Wallet SICAI?</h2>
-        <p>
-            Wallet SICAI es una plataforma académica diseñada para la administración de fondos estudiantiles. 
-            Permite consultar el saldo de manera rápida, gestionar recargas y gastos, y generar reportes en PDF. 
-            Su objetivo es brindar transparencia y eficiencia en la gestión financiera de los estudiantes.
-        </p>
-    </section>
 
-    <section class="beneficios">
-        <h2>Beneficios</h2>
-        <ul>
-            <li>Administración de fondos estudiantiles</li>
-            <li>Consulta rápida de saldo</li>
-            <li>Historial de recargas y gastos</li>
-            <li>Reportes en PDF</li>
-        </ul>
-    </section>
-<!--
-    <section class="modulos">
-        <h2>Módulos principales</h2>
-        <div class="cards">
-            <div class="card">Consulta de saldo</div>
-            <div class="card">Recargar saldo</div>
-            <div class="card">Historial de recargas</div>
-            <div class="card">Reportes</div>
-            <div class="card">Historial de gastos</div>
-            <div class="card">Gestión de categorías</div>
+    <main>
+        <div class="container">
+            <section class="descripcion" data-aos="fade-up">
+                <h2>¿Qué es Wallet SICAI?</h2>
+                <p>Es una solución tecnológica diseñada para transformar la administración financiera escolar, esto mediante la consulta de saldo de manera rápida, la gestión de recargas y gastos, y la generación de reportes en PDF. 
+                De esta manera optimizando procesos de gestión financiera, garantizando trazabilidad y transparencia total.</p>
+            </section>
         </div>
-    </section>
--->
-  <section class="modulos">
-    <h2>Módulos principales</h2>
-    <div class="modulo izquierda">
-        <img src="img/Consulta.png" alt="Consulta de Saldo" class="icono-modulo">
-        <div class="texto-modulo">
-            <h3>Consulta de Saldo</h3>
-            <p>Permite verificar rápidamente los datos de la cuenta estudiantil.</p>
-        </div>
-    </div>
 
-    <div class="modulo derecha">
-        <img src="img/Recarga.png" alt="Recargar Saldo" class="icono-modulo">
-        <div class="texto-modulo">
-            <h3>Recargar Saldo</h3>
-            <p>Facilita la recarga de fondos de manera segura y transparente.</p>
-        </div>
-    </div>
+        <section class="beneficios-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Beneficios Clave</h2>
+                <div class="beneficios-grid">
+                    <div class="beneficio-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-id-card-clip beneficio-icon"></i>
+                        <h3>Administración</h3>
+                        <p>Control total de fondos estudiantiles centralizado.</p>
+                    </div>
+                    <div class="beneficio-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-magnifying-glass-chart beneficio-icon"></i>
+                        <h3>Consulta Real</h3>
+                        <p>Acceso inmediato al saldo en tiempo real.</p>
+                    </div>
+                    <div class="beneficio-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-clock-rotate-left beneficio-icon"></i>
+                        <h3>Historial</h3>
+                        <p>Registro auditable de cada movimiento financiero.</p>
+                    </div>
+                    <div class="beneficio-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-file-pdf beneficio-icon"></i>
+                        <h3>Reportes PDF</h3>
+                        <p>Generación de documentos oficiales al instante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="modulo izquierda">
-        <img src="img/Historial-Gastos.png" alt="Historial de Gastos" class="icono-modulo">
-        <div class="texto-modulo">
-            <h3>Historial de Gastos</h3>
-            <p>Visualiza los gastos realizados y organiza las categorías.</p>
-        </div>
-    </div>
+        <section class="modulos-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Módulos principales</h2>
 
-    <div class="modulo derecha">
-        <img src="img/Historial-Recarga.png" alt="Historial de Recargas" class="icono-modulo">
-        <div class="texto-modulo">
-            <h3>Historial de Recargas</h3>
-            <p>Consulta las recargas realizadas para cada estudiante.</p>
-        </div>
-    </div>
+                <div class="modulo-item">
+                    <div class="modulo-image" data-aos="fade-right">
+                        <img src="img/Consulta.png" alt="Consulta">
+                    </div>
+                    <div class="modulo-text-card" data-aos="fade-left">
+                        <h3>Consulta de Saldo</h3>
+                        <p>Permite verificar rápidamente los datos de la cuenta estudiantil con una interfaz limpia y segura.</p>
+                    </div>
+                </div>
 
-    <div class="modulo izquierda">
-        <img src="img/Reportes.png" alt="Reportes Historial Recargas" class="icono-modulo">
-        <div class="texto-modulo">
-            <h3>Reportes</h3>
-            <p>Genera reportes en PDF con el historial de recargas.</p>
-        </div>
-    </div>
+                <div class="modulo-item reverse">
+                    <div class="modulo-image" data-aos="fade-left">
+                        <img src="img/Recarga.png" alt="Recarga">
+                    </div>
+                    <div class="modulo-text-card" data-aos="fade-right">
+                        <h3>Recargar Saldo</h3>
+                        <p>Facilita la recarga de fondos de manera ágil, garantizando disponibilidad inmediata.</p>
+                    </div>
+                </div>
 
-    <div class="modulo derecha">
-        <img src="img/Categorias-Gastos.png" alt="Gestión de Gastos y Categorías" class="icono-modulo">
-        <div class="texto-modulo">
-            <h3>Gestión de Gastos y Categorías</h3>
-            <p>Administra las categorías de gastos y se crean gastos para cada estudiante.</p>
-        </div>
-    </div>
-</section>
+                <div class="modulo-item">
+                    <div class="modulo-image" data-aos="fade-right">
+                        <img src="img/Historial-Gastos.png" alt="Gastos">
+                    </div>
+                    <div class="modulo-text-card" data-aos="fade-left">
+                        <h3>Historial de Gastos</h3>
+                        <p>Visualiza detalladamente los consumos realizados, organizados por categorías.</p>
+                    </div>
+                </div>
 
-    <footer>
-        <p>Wallet SICAI © 2026 │ Proyecto académico │ Integrantes: 
-            María José
-            María Isabel
-        </p>
+                <div class="modulo-item reverse">
+                    <div class="modulo-image" data-aos="fade-left">
+                        <img src="img/Historial-Recarga.png" alt="Recargas">
+                    </div>
+                    <div class="modulo-text-card" data-aos="fade-right">
+                        <h3>Historial de Recargas</h3>
+                        <p>Mantén un control estricto de todos los ingresos realizados a la cuenta.</p>
+                    </div>
+                </div>
+
+                <div class="modulo-item">
+                    <div class="modulo-image" data-aos="fade-right">
+                        <img src="img/Reportes.png" alt="Reportes">
+                    </div>
+                    <div class="modulo-text-card" data-aos="fade-left">
+                        <h3>Reportes</h3>
+                        <p>Exporta información financiera en PDF listos para trámites institucionales.</p>
+                    </div>
+                </div>
+
+                <div class="modulo-item reverse">
+                    <div class="modulo-image" data-aos="fade-left">
+                        <img src="img/Categorias-Gastos.png" alt="Gestión">
+                    </div>
+                    <div class="modulo-text-card" data-aos="fade-right">
+                        <h3>Gestión de Gastos y Categorías</h3>
+                        <p>Configura límites y tipos de gastos permitidos de manera personalizada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container" data-aos="fade-up">
+            <p>Wallet SICAI © 2026 │ Proyecto Académico</p>
+            <p class="integrantes">María José • María Isabel</p>
+        </div>
     </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar animaciones una sola vez
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 120
+        });
+
+        // Botón volver arriba
+        const btnTop = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 400) {
+                btnTop.classList.add("show");
+            } else {
+                btnTop.classList.remove("show");
+            }
+        });
+    </script>
 </body>
 </html>
