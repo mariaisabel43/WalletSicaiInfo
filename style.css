@@ -11,16 +11,17 @@
     --border-thin: 1px solid rgba(58, 12, 163, 0.15);
 }
 
+/* --- ESTILOS BASE --- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Inter', sans-serif; background: var(--white); color: #0f172a; line-height: 1.6; overflow-x: hidden; }
-.container { max-width: 1050px; margin: 0 auto; padding: 0 25px; }
+.container { max-width: 1050px; margin: 0 auto; padding: 0 20px; }
 
-/* --- HERO CON LOGO ANIMADO --- */
+/* --- HERO --- */
 .hero {
     background: linear-gradient(135deg, var(--purple-dark) 0%, var(--primary) 100%);
     color: white;
-    padding: 80px 0 150px 0;
+    padding: 80px 0 140px 0;
     text-align: center;
     clip-path: ellipse(150% 100% at 50% 0%);
 }
@@ -38,7 +39,7 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: #0f172
 
 .header-content { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 15px; }
 h1 { font-size: 3rem; font-weight: 800; }
-.hero p { font-size: 1.1rem; opacity: 0.85; max-width: 550px; margin: 0 auto; }
+.hero p { font-size: 1.1rem; opacity: 0.85; max-width: 550px; margin: 0 auto; padding: 0 10px; }
 
 /* --- DESCRIPCIÓN CRISTAL --- */
 .descripcion {
@@ -46,34 +47,34 @@ h1 { font-size: 3rem; font-weight: 800; }
     background: var(--glass);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    padding: 50px 35px;
-    border-radius: 30px;
+    padding: 40px 30px;
+    border-radius: 25px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     text-align: center;
     max-width: 900px;
     border: 1px solid rgba(255, 255, 255, 0.4); 
 }
-.descripcion h2 { color: var(--primary); font-size: 2.2rem; margin-bottom: 20px; font-weight: 800; }
-.descripcion p { font-size: 1.1rem; color: #334155; line-height: 1.8; }
+.descripcion h2 { color: var(--primary); font-size: 2.2rem; margin-bottom: 15px; font-weight: 800; }
+.descripcion p { font-size: 1.05rem; color: #334155; line-height: 1.7; }
 
-/* --- BENEFICIOS CON REBOTE ELÁSTICO --- */
+/* --- BENEFICIOS --- */
 .beneficios-section {
-    padding: 80px 0;
+    padding: 70px 0;
     background-color: var(--soft-blue);
     border-top: 1px solid #e0e7ff;
     border-bottom: 1px solid #e0e7ff;
 }
-.section-title { text-align: center; font-size: 2.2rem; color: var(--primary); margin-bottom: 60px; font-weight: 800; }
+.section-title { text-align: center; font-size: 2.2rem; color: var(--primary); margin-bottom: 50px; font-weight: 800; }
 
 .beneficios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .beneficio-card {
     background: rgba(255, 255, 255, 0.9);
-    padding: 35px 20px;
+    padding: 30px 20px;
     border-radius: 18px;
     text-align: center;
     border: var(--border-thin);
@@ -81,18 +82,17 @@ h1 { font-size: 3rem; font-weight: 800; }
 }
 
 .beneficio-icon { 
-    font-size: 42px; 
+    font-size: 40px; 
     color: var(--primary); 
-    margin-bottom: 18px; 
+    margin-bottom: 15px; 
     display: inline-block;
-    /* Efecto rebote SICAI */
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .beneficio-card:hover {
     transform: translateY(-8px);
     background: white;
-    box-shadow: 0 15px 30px rgba(58, 12, 163, 0.1);
+    box-shadow: 0 12px 25px rgba(58, 12, 163, 0.08);
 }
 
 .beneficio-card:hover .beneficio-icon {
@@ -101,13 +101,13 @@ h1 { font-size: 3rem; font-weight: 800; }
 }
 
 /* --- MÓDULOS --- */
-.modulos-section { padding: 100px 0; background-color: #fdfeff; }
-.modulo-item { display: flex; align-items: center; gap: 60px; margin-bottom: 90px; }
+.modulos-section { padding: 80px 0; background-color: #fdfeff; }
+.modulo-item { display: flex; align-items: center; gap: 50px; margin-bottom: 80px; }
 .modulo-item.reverse { flex-direction: row-reverse; }
 
 .modulo-image { flex: 1; text-align: center; }
 .modulo-image img {
-    width: 100%; max-width: 400px; border-radius: 20px;
+    width: 100%; max-width: 380px; border-radius: 20px;
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.1));
     transition: transform 0.5s ease;
 }
@@ -115,31 +115,59 @@ h1 { font-size: 3rem; font-weight: 800; }
 
 .modulo-text-card {
     flex: 1; background-color: rgba(238, 242, 255, 0.85); 
-    padding: 45px; border-radius: 35px; border: var(--border-thin);
+    padding: 40px; border-radius: 30px; border: var(--border-thin);
     backdrop-filter: blur(5px);
 }
-.modulo-text-card h3 { font-size: 1.8rem; color: var(--primary); margin-bottom: 15px; font-weight: 800; }
-.modulo-text-card p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; }
+.modulo-text-card h3 { font-size: 1.7rem; color: var(--primary); margin-bottom: 12px; font-weight: 800; }
+.modulo-text-card p { color: var(--text-muted); font-size: 1rem; line-height: 1.6; }
 
 /* --- FOOTER Y BOTÓN VOLVER ARRIBA --- */
 .main-footer {
     background-color: var(--purple-dark);
-    color: white; padding: 60px 0; text-align: center;
+    color: white; padding: 50px 0; text-align: center;
     border-top: 4px solid var(--primary);
 }
 
 .back-to-top {
-    position: fixed; bottom: 30px; right: 30px;
+    position: fixed; bottom: 25px; right: 25px;
     background: var(--primary); color: white;
     width: 45px; height: 45px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     text-decoration: none; transition: all 0.3s ease;
     opacity: 0; visibility: hidden; z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .back-to-top.show { opacity: 1; visibility: visible; }
 .back-to-top:hover { background: var(--secondary); transform: translateY(-5px); }
 
+/* --- RESPONSIVE (CELULARES) --- */
 @media (max-width: 900px) {
-    .modulo-item, .modulo-item.reverse { flex-direction: column; text-align: center; gap: 30px; }
+    h1 { font-size: 2.2rem; }
+    .hero { padding: 60px 0 100px 0; }
+    
+    .descripcion {
+        margin: -50px 10px 60px 10px;
+        padding: 30px 20px;
+    }
+    
+    .descripcion h2 { font-size: 1.8rem; }
+    
+    .modulo-item, .modulo-item.reverse { 
+        flex-direction: column !important; 
+        text-align: center; 
+        gap: 25px; 
+        margin-bottom: 60px;
+    }
+    
+    .modulo-image img { max-width: 300px; }
+    
+    .modulo-text-card { 
+        padding: 30px 20px; 
+        border-radius: 20px;
+    }
+
+    .section-title { font-size: 1.8rem; margin-bottom: 30px; }
+    
+    .beneficios-grid { grid-template-columns: 1fr; } /* Una sola columna en móvil */
 }
